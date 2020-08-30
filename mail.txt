@@ -1,0 +1,37 @@
+AT
+
+OK
+AT+CIFSR
+
+10.85.34.234
+AT+EMAILCID=1
+
+OK
+AT+EMAILTO=30
+
+OK
+AT+SMTPSRV="smtp.ru",25
+
+OK
+AT+SMTPAUTH=1,"toster.124@yandex.ru","ivan06ion08"
+
+OK
+AT+SMTPFROM="toster.124@yandex.ru","testSIM900"
+
+OK
+AT+SMTPRCPT=0,0,"iv.liki@yandex.ru","Ivan"
+
+OK
+AT+SMTPSUB="Test SIM900"
+
+OK
+AT+SMTPBODY=30
+
+DOWNLOAD
+
+OK
+AT+SMTPSEND
+
+OK
+
++SMTPSEND: 61

@@ -1,0 +1,18 @@
+#define DHT_PIN A0
+#define SERVO_PIN 8
+#define WIFI_PIN 10
+#define SD_PIN 11
+#define mhz19_PIN 25
+esp8266 (17, 16); 17 - tx на esp
+mhz19Serial(19, 18); 19 - tx на mhz19
+servo[0].attach(2); темп интернет
+servo[1].attach(3); темп 2 часа интернет
+servo[2].attach(4); темп день интернет
+servo[3].attach(5); влажность интернет
+servo[4].attach(6); температура
+servo[5].attach(7); влажность
+servo[6].attach(14); предсказание
+servo[7].attach(15); CO2
+RTC:
+D - 20
+C - 21

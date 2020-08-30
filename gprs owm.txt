@@ -1,0 +1,255 @@
+AT
+
+OK
+AT+CBC
+
++CBC: 0,40,3725
+
+OK
+AT+CREG?
+
++CREG: 0,1
+
+OK
+AT+CSTT=\"internet.beeline.ru\",\"beeline\",\"beeline\"
+
+ERROR
+AT+CSTT="internet.beeline.ru","beeline","beeline"
+
+OK
+AT+CIFSR
+
+ERROR
+AT+CIFSR?
+
+ERROR
+AT+CIPSTART="TCP","api.openweathermap.org",80
+
+ERROR
+AT+CIPSTART="TCP","%s,"%d,"api.openweathermap.org",80
+
+ERROR
+AT+CIFSR
+
+ERROR
+AT+CGATT=1
+
+OK
+AT+CIPMUX=0
+
+ERROR
+AT+CIICR
+
+OK
+AT+CIFSR
+
+10.81.1.210
+AT+CIPSTART="TCP","api.openweathermap.org",80
+
+OK
+
+CONNECT OK
+AT+CIPSEND
+
+> GET /data/2.5/forecast?q=Kaluga,ru&appid=6a4ba421859c9f4166697758b68d889b&mode=json&units=metric&cnt=10
+at
+
+ERROR
+
+CLOSED
+
+
+
+
+
+
+AT
+
+OK
+AT+CSTT="internet.beeline.ru","beeline","beeline"
+AT+CIICR
+AT+CIFSR
+AT+IFC=2,2
+AT+CGATT=1
+AT+CIPMUX=0
+AT+CIPSTART="TCP","api.openweathermap.org",80
+AT+CIPSEND
+
+
+0x1A
+GET /data/2.5/weather?q=Kaluga,ru&appid=6a4ba421859c9f4166697758b68d889b
+AT+CIFSR
+
+10.69.210.7
+AT+CIPSTART="TCP","api.openweathermap.org",80
+
+OK
+
+CONNECT OK
+AT+CIPSEND
+
+> GET /data/2.5/forecast?q=Kaluga,ru&appid=6a4ba421859c9f4166697758b68d889b&mode=json&units=metric&cnt=10
+-1
+?
+/n
+
+ERROR
+
+CLOSED
+AT+CIPSTART="TCP","api.openweathermap.org",80
+
+OK
+
+CONNECT OK
+AT+CIPSEND
+
+> GET /data/2.5/forecast?q=Kaluga,ru&appid=6a4ba421859c9f4166697758b68d889b&mode=json&units=metric&cnt=10
+0x1A
+AT+CIPQSEND?
+
+ERROR
+
+CLOSED
+AT+CIPQSEND?
+
++CIPQSEND: 0
+
+OK
+AT+CIPSEND?
+
++CIPSEND: 0
+
+OK
+AT+CIPSEND?
+
++CIPSEND: 0
+
+OK
+AT+CIPSTART="TCP","api.openweathermap.org",80
+
+OK
+
+CONNECT OK
+AT+CIPSEND?
+
++CIPSEND: 1460
+
+OK
+AT+CIPQSEND?
+
++CIPQSEND: 0
+
+OK
+AT+CIPQSEND=1
+
+OK
+AT+CIPQSEND?
+
++CIPQSEND: 1
+
+OK
+AT+CIPSEND
+
+> GET /data/2.5/forecast?q=Kaluga,ru&appid=6a4ba421859c9f4166697758b68d889b&mode=json&units=metric&cnt=10
+
+ERROR
+
+CLOSED
+AT+CIPQSEND=0
+
+OK
+AT+CIPSTART="TCP","api.openweathermap.org",80
+
+OK
+
+CONNECT OK
+AT+CIPSEND=103
+
+> GET /data/2.5/forecast?q=Kaluga,ru&appid=6a4ba421859c9f4166697758b68d889b&mode=json&units=metric&cnt=10
+
+SEND OK
+AT+CIPCLOSE
+
+CLOSE OK
+AT+CIPHEAD=1
+
+OK
+AT+CIPSRIP=1
+
+OK
+AT+CIPSHOWTP=1
+
+OK
+AT+CIPRXGET?
+
++CIPRXGET: 0
+
+OK
+AT+CIPRXGET=1
+
+ERROR
+AT+CIFSR
+
+10.69.210.7
+AT+CIPSTART="TCP","api.openweathermap.org",80
+
+OK
+
+CONNECT OK
+AT+CIPSEND=103
+
+> GET /data/2.5/forecast?q=Kaluga,ru&appid=6a4ba421859c9f4166697758b68d889b&mode=json&units=metric&cnt=10
+
+SEND OK
+AT+CIPRXGET=2,20
+
+ERROR
+
+CLOSED
+AT+CIPSTART="TCP","api.openweathermap.org",80
+
+OK
+
+CONNECT OK
+AT+CIPSEND=72
+
+> GET /data/2.5/weather?q=Kaluga,ru&appid=6a4ba421859c9f4166697758b68d889b
+
+SEND OK
+AT+CIPCLOSE
+
+CLOSE OK
+AT+IFC=2,2
+
+OK
+AT
+
+OK
+AT+SAPBR=1,1
+
+OK
+AT+SAPBR=3,1,\”APN\”,\”internet.beeline.ru\” 
+
+ERROR
+AT+SAPBR=3,1,”APN”,”internet.mts.ru” 
+
+ERROR
+AT+SAPBR=3,1,"APN","internet.mts.ru"
+
+OK
+AT+SAPBR=3,1,”USER”,”beeline”
+
+ERROR
+AT+SAPBR=3,1,"USER","beeline"
+
+OK
+AT+SAPBR=3,1,"PWD","beeline"
+
+OK
+AT+SAPBR=1,1
+
+ERROR
+AT+CFUN=1,1
+
+OK
+
